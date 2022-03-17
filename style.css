@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
 }
+
 body {
     display: flex;
     justify-content: center;
@@ -22,6 +23,7 @@ body {
     flex-direction: column;
     align-items:center;
     text-align: center;
+    border-radius: 15px;
 }
 
 h1  {
@@ -79,52 +81,59 @@ h1  {
     height: 40px;
 }
 
-/*#show
-{
-    appearance:none;
-    border: none;
-    outline: none;
-    background: none;
-}*/
-
 #show 
 {
     background:linear-gradient(to right,orange,yellow);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 34px;     
-    font-weight:850;
 }
 
 #show
 {
+    border: none;
+    outline: none;
+}
+#show
+{
 border-radius: 33px;
 margin-left: 20px;
-border-width: 0px 0px 3px 0px;
-height: 40px;
-width: 550px;
+height: 35px;
+width: 650px;
 border-color: royalblue;
 font-size:large;
 background-color:aliceblue;   
-font-size: 20px;                     
+font-size: 22px;     
+font-weight: 750;
+margin-right: 10px;
+box-shadow: 0px 0px 5px 0px rgba(17, 231, 238, 0.952);
+border-width: 0px 0px 3px 0px;
 }
 
-#delete {
-            appearance:none;
-            border: none;
-            outline: none;
-            background: none;
-        }
+#dun {
+            width: 100px;
+            height: 40px;
+            background:  linear-gradient(to right,orange,yellow);
+        }  
+
+#dun:hover {
+                cursor: pointer;
+                opacity: 0.8;
+              }
  
 #delete {
-          font-size: 34px;     
-          font-weight:850;
-          background:linear-gradient(to right,orange,yellow);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+          font-size: 25px;     
+          font-weight:750;
+          border-radius: 10px;
+          height: 35px;
+          background:  linear-gradient(to right,orange,yellow);
+          box-shadow: 0px 0px 5px 0px rgba(17, 231, 238, 0.952);
+          border-width: 0px 0px 3px 0px;
         }  
 
 #delete:hover {
                 cursor: pointer;
                 opacity: 0.8;
               }
+
+.completed
+{
+    text-decoration: line-through;
+}
